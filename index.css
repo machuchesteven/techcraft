@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+#domain-search-input::placeholder{
+  text-align: center;
+}
+#site-header{
+  text-align: center;
+}
+#arrow-down{
+  color:#1B70DF;
+}
+#brand-name{
+  color: #1B4FDF;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
