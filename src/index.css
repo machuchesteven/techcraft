@@ -1,8 +1,14 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
 }
 #domain-search-input::placeholder{
   text-align: center;
@@ -16,7 +22,128 @@ body {
 #brand-name{
   color: #1B4FDF;
 }
+.services{
+  background-color:#ECF5FF;
+  margin: 7.5%;
+  width: 85%;
+}
+.service-container{
+  padding-bottom: 1rem;
+}
+.service-container .card{
+  padding: 1.2rem 2rem;
+}
+.service-container .card:hover{
+  scale: 1.1;
+  transform: translateY(0.3rem);
+}
+.service-container .card h5{
+  text-align: center;
+  text-shadow: #0d0e0a;
+  background-color:#ECF5FF;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+
+.footer-container{
+  position:static;
+  bottom: 0vh;
+  background-color:navy;
+  max-width: 100%;
+}
+footer{
+  padding: 70px 0;
+  max-width: 1500px;
+  margin:auto;
+  
+}
+.footer-row{
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer-list{
+  list-style: none;
+}
+.footer-col{
+  width: 25%;
+  padding: 0 15px;
+}
+.footer-col h4{
+  font-size: 18px;
+  color: #fff;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+  font-weight: 500;
+  position: relative;
+}
+.footer-col h4::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #e91e63;
+  height: 2px;
+  box-sizing: border-box;
+
+}
+.footer-col ul li:not(:last-child){
+  margin-bottom: 10px;
+  text-decoration: none;
+  font-weight: 300;
+  display:block;
+  transition: all 0.3s ease;
+}
+ul li{
+  color: #fff;
+}
+.card{
+  margin-left: -1rem important;
+  margin-right: auto !important;
+}
+@media only screen and (max-width: 768px) {
+#navigation {
+  display: none;
+}
+.footer-col{
+  width: 50%;
+  padding: 0 15px;
+}
+.footer-col h4{
+  font-size: 18px;
+  color: #fff;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+  font-weight: 500;
+  position: relative;
+}
+.footer-col h4::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #e91e63;
+  height: 2px;
+  box-sizing: border-box;
+
+}
+ul li{
+  color: #fff;
+}
+.services{
+  padding: 0.25em 0.25em;
+}
+.service-container .card{
+  padding: 1.2rem 2rem;
+  
+  background-color:#ECF5FF;
+}
+.service-container .card:hover{
+  scale: 1.1;
+  transform: translateY(3px);
+}
 }

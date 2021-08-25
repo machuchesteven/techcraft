@@ -4,19 +4,24 @@ import "bootstrap/dist/css/bootstrap.min.css"
 
 
 
-const Navbar = () => {
+const Navigation = () => {
+    function loginButton(e){
+        e.preventDefault()
+        console.log("Redirect to /login  screen")
+        window.location.href = "/login"
+    }
     return (
         <div>
-            <BNavbar bg="light">
+            <BNavbar bg="light" sticky>
             <Container>
                 <div><BNavbar.Brand><b id="brand-name">TechCraftHost</b></BNavbar.Brand></div>
                 <Nav className="justify-content-center" activeKey="/">
-                    <Nav.Item><Nav.Link href="/">Home</Nav.Link></Nav.Item>
-                    <Nav.Item>Consult Us</Nav.Item>
-                    <Nav.Item>More Services</Nav.Item>
-                    <Nav.Item>Hire Us</Nav.Item>                   
+                    <Nav.Item style={{flex: 2}}><Nav.Link href="/">Home</Nav.Link></Nav.Item>
+                    <Nav.Item style={{flex: 2}}><Nav.Link href="/">Consult Us</Nav.Link></Nav.Item>
+                    <Nav.Item style={{flex: 2}}><Nav.Link href="/">Help</Nav.Link></Nav.Item>
+                    <Nav.Item style={{flex: 2}}><Nav.Link href="/">Projects</Nav.Link></Nav.Item>
                 </Nav>
-                <Button variant="outline-primary" className="nav-button">Log In</Button>
+                <Button variant="outline-primary" className="nav-button" onClick={(e)=> loginButton(e)}>Log In</Button>
 
             </Container>
             </BNavbar>
@@ -24,4 +29,4 @@ const Navbar = () => {
     )
 }
 
-export default Navbar
+export default Navigation;
